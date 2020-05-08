@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>湖湘传统美术研究基地</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!--<link rel="shortcut icon" href="favicon.ico">
+	-->
+	<!-- include main css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <link href="css/video-js.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body onload="load()">
+
+ <!-- video controls -->
+ <div id="video-content">
+    <div onclick="closeVideo()" style="height: 20px; width: 20px; border: 1px solid black; position: relative;">
+        <span class="close"></span>
+    </div>
+      <video id="my-video" class="video-js"  preload="auto" width="960" height="500"
+           data-setup="{}">
+        <source src="videos/video.mp4" type="video/mp4">
+        <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+      </video>
+  </div>
+
+<!-- slider -->
+ <div class="slide">
+    <div class="slidewidt">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: url('images/slide4.jpg') no-repeat; background-size: 100% 100%;">
+                </div>
+                <div class="swiper-slide" style="background: url('images/slide1.png') no-repeat; background-size: 100% 100%;">
+                </div>
+                <div class="swiper-slide" style="background: url('images/slide2.png') no-repeat; background-size: 100% 100%;">
+                </div>
+                <div class="swiper-slide" style="background: url('images/slide3.png') no-repeat; background-size: 100% 100%;">
+                </div>
+            </div>
+        </div>
+		<div class="pagination">
+		</div>
+    </div>
+</div>
+
+<!-- header -->
+<div class="header">
+    <div class="header-wrap clearFloat">
+        <div class="logo floatLeft">
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="nav floatRight">
+            <ul class="clearfix">
+                <li class="navactive" >
+                    <a  style="color: black;" href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="#introduction">基地概况</a>
+                </li>
+                <li>
+                    <a href="news.html">基地新闻</a>
+                </li>
+                <li>
+                    <a href="team.html">基地团队</a>
+                </li>
+                <li>
+                    <a href="collections.html">馆藏展览</a>
+                </li>
+                <li>
+                    <a href="events.html">活动展览</a>
+                </li>
+                <li>
+                    <a href="academics.html">学术交流</a>
+                </li>
+                <li>
+                    <a href="policies.html">文件制度</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- News -->
+<div class="container nes">
+    <div class="row">
+        <!-- search -->
+        <div class="search fr">
+	        <form onsubmit="return false;">
+	            <input id="searchVal" type="text" placeholder="请输入您要搜索的内容...">
+	            <button class="search-btn"></button>
+	        </form>
+        </div>
+        <div class="top" id="jdxw">
+                <span>基地新闻</span>
+                <i>NEWS</i> 
+                <em></em>
+        </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div id="news_slide" class="news_slide_box">
+                    <div class="bd">
+                        <div class="tempWrap">
+                            <ul >
+                                <li>
+                                    <a class="pic" href="news-1.html">
+                                        <img src="images/new_img_1.jpg">
+                                        <span class="title">
+                                            湖南城市学院湖湘传统美术研究基地在 “2019年湖南省社科普及基地考核评估”中获“优秀”
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="news-1.html">
+                                        <img src="images/news_img_2.png">
+                                        <span class="title">
+                                            10月10日，苗族造型文化研究所所长段知力副教授在美艺楼107多媒体报告厅为艺术学院视觉传达设计系学生作了一场主题学术讲座，段知力主讲的主题是“民间美术造型观在现代设计中的运用”。
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="news-2.html">
+                                        <img src="images/new_img_3.jpg">
+                                        <span class="title">
+                                            2018年10月8日与9日，艺术学院院长龙湘平教授在美艺楼107报告厅为视觉传达系的2017级全体学生举办了“民间美术理论知识”和“苗族图腾崇拜的文化内涵”两场讲座
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="news-3.html">
+                                        <img src="images/new_img_4.jpg">
+                                        <span class="title">
+                                            湖南城市学院湖湘传统美术研究基地与加纳海岸角大学孔子学院联合举办夏令营文化交流活动
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="prev"></span>
+                    <span class="next"></span>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                <ul class="news_list">
+                    <li>
+                        <div class="news_pic col-lg-3 col-md-3 col-sm-4 col-xs-12">                                 
+                            <a href="news-1.html" class="">
+                                <img src="images/new_img_1.jpg">
+                            </a>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                            <a style="font-size: 18px; font-weight: bold;" href="news-1.html" class="news_tit">湖南城市学院湖湘传统美术研究基地在 “2019年湖南省社科普及基地考核评估”中获“优秀”</a>
+                            <p class="news_desc">2019年3月21日，2019年湖南省社科普及基地考核评估专家评审会在湖南省社科联机关三楼会议室举行。本次考核评估对象为2016年获“湖南省社会科学普及基地”称号的27家单位。评估通过采取基地陈述汇报、专家现场打分相结合的方式进行。</p>
+                             <p class="news_time">2019-03-25</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news_pic col-lg-3 col-md-3 col-sm-4 col-xs-12">                                 
+                            <a href="news-2.html" class="">
+                                <img src="images/news_img_2.png">
+                            </a>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                            <a style="font-size: 18px; font-weight: bold;" href="news-3.html" class="news_tit">10月10日，苗族造型文化研究所所长段知力副教授在美艺楼107多媒体报告厅为艺术学院视觉传达设计系学生作了一场主题学术讲座，段知力主讲的主题是“民间美术造型观在现代设计中的运用”。</a>
+                            <p class="news_desc">首先，段知力简要介绍了民间美术的概念、分类、特征以及造物法则。随后，他对民间美术与现代设计两者之间的关系作了详细的讲述。最后，段知力从标志设计、图形创意、书装设计、招贴设计、包装设计等方面对民间美术元素在现代设计中的运用作了重点阐述。随后，在场学生踊跃提问，段知力一一解答，讲座在极其热烈的气氛中圆满结束。</p>
+                             <p class="news_time">2018-10-10</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news_pic col-lg-3 col-md-3 col-sm-4 col-xs-12">                            
+                            <a href="news-3.html" class="">
+                                <img src="images/new_img_3.jpg">
+                            </a>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                            <a style="font-size: 18px; font-weight: bold;" href="new_img_3.jpg.html" class="news_tit">2018年10月8日与9日，艺术学院院长龙湘平教授在美艺楼107报告厅为视觉传达系的2017级全体学生举办了“民间美术理论知识”和“苗族图腾崇拜的文化内涵”两场讲座</a>
+                           
+                            <p class="news_desc">10月8日的讲座主要内容分为“民间美术的概念”、“民间美术的分类”、“民间美术的特征”、“民间美术的造物法则”、“民间美术的造型手法”以及“民间美术教育的研究现状”等六大方面。本次讲座中，龙湘平教授用自己多年的学术经验和独到的学术见解阐述了民间美术的相关知识，给学生们上了一堂生动而幽默的民间美术课程，引导学生们设计出更优秀、更具文化内涵的作品。</p>
+                             <p class="news_time">2018-10-09</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</div>
+</div>
+
+ <!--Collection display-->
+<div class="wrap container">
+    <div class="clearFloat">
+        <div class="top" id="gczs">
+                <span>馆藏展览</span>
+                <i>COLLECTION DISPLAY</i> 
+                <em></em>
+        </div>
+        <div class="anlist">
+            <div class="nalista">
+                <a href="#" data-filter=".painting" class="nactive">装饰绘画</a>
+                <a href="#" data-filter=".clothe">民族服饰</a>
+                <a href="#" data-filter=".building">民居建筑</a>
+                <a href="#" data-filter=".weaving">织布印染</a>
+                <a href="#" data-filter=".sculpture">民间雕刻</a>
+                <a href="#" data-filter=".life">生活器具</a>
+                <a href="#" data-filter=".Lantern">游戏玩具</a>
+                <a href="#" data-filter=".drama">宗教戏曲</a>
+            </div>
+            <div id="gallery" class="clearFloat">
+                <!--民族服饰-->
+                <div class="item clothe">
+                    <a href="collection-3.html">
+                        <img src="images/2 (6).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item clothe">
+                    <a href="collection-3.html">
+                        <img src="images/2 (1).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item clothe">
+                    <a href="collection-3.html">
+                        <img src="images/2 (2).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item clothe">
+                    <a href="collection-3.html">
+                        <img src="images/2 (3).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item clothe">
+                    <a href="collection-3.html">
+                        <img src="images/2 (4).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item clothe">
+                    <a href="collection-3.html">
+                        <img src="images/2 (5).jpg" alt="">
+                    </a>
+                </div>
+              
+                <!--民居建筑-->
+                <div class="item building">
+                    <a href="collection-4.html">
+                        <img src="images/0 (1).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item building">
+                    <a href="collection-4.html">
+                        <img src="images/0 (2).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item building">
+                    <a href="collection-4.html">
+                        <img src="images/0 (3).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item building">
+                    <a href="collection-4.html">
+                        <img src="images/0 (4).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item building">
+                    <a href="collection-4.html">
+                        <img src="images/0 (5).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item building">
+                    <a href="collection-4.html">
+                        <img src="images/0 (6).jpg" alt="">
+                    </a>
+                </div>
+               
+               <!-- 织布印染 -->
+                <div class="item weaving">
+                    <a href="collection-1.html">
+                        <img src="images/5 (1).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item weaving">
+                    <a href="collection-1.html">
+                        <img src="images/5 (2).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item weaving">
+                    <a href="collection-1.html">
+                        <img src="images/5 (3).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item weaving">
+                    <a href="collection-1.html">
+                        <img src="images/5 (4).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item weaving">
+                    <a href="collection-1.html">
+                        <img src="images/5 (5).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item weaving">
+                    <a href="collection-1.html">
+                        <img src="images/5 (6).jpg" alt="">
+                    </a>
+                </div>
+             
+                <!--民间雕刻-->
+                <div class="item sculpture">
+                    <a href="collection-5.html">
+                        <img src="images/1 (1).png" alt="">
+                    </a>
+                </div>
+                <div class="item sculpture">
+                    <a href="collection-5.html">
+                        <img src="images/1 (2).png" alt="">
+                    </a>
+                </div>
+                <div class="item sculpture">
+                    <a href="collection-5.html">
+                        <img src="images/1 (3).png" alt="">
+                    </a>
+                </div>
+                <div class="item sculpture">
+                    <a href="collection-5.html">
+                        <img src="images/1 (4).png" alt="">
+                    </a>
+                </div>
+                <div class="item sculpture">
+                    <a href="collection-5.html">
+                        <img src="images/1 (5).png" alt="">
+                    </a>
+                </div>
+                <div class="item sculpture">
+                    <a href="collection-5.html">
+                        <img src="images/1 (6).png" alt="">
+                    </a>
+                </div>
+               
+                <!-- 装饰绘画 -->
+                <div class="item painting">
+                    <a href="collection-2.html">
+                        <img src="images/6 (1).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item painting">
+                    <a href="collection-2.html">
+                        <img src="images/6 (2).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item painting">
+                    <a href="collection-2.html">
+                        <img src="images/6 (3).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item painting">
+                    <a href="collection-2.html">
+                        <img src="images/6 (4).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item painting">
+                    <a href="collection-2.html">
+                        <img src="images/6 (5).jpg" alt="">
+                    </a>
+                </div>
+                <div class="item painting">
+                    <a href="collection-2.html">
+                        <img src="images/6 (6).jpg" alt="">
+                    </a>
+                </div>
+
+                <!-- 生活器具 -->
+                <div class="item life">
+                    <a href="collection-6.html">
+                        <img src="images/3 (1).png" alt="">
+                    </a>
+                </div>
+                <div class="item life">
+                    <a href="collection-6.html">
+                        <img src="images/3 (2).png" alt="">
+                    </a>
+                </div>
+                <div class="item life">
+                    <a href="collection-6.html">
+                        <img src="images/3 (3).png" alt="">
+                    </a>
+                </div>
+                <div class="item life">
+                    <a href="collection-6.html">
+                        <img src="images/3 (4).png" alt="">
+                    </a>
+                </div>
+                <div class="item life">
+                    <a href="collection-6.html">
+                        <img src="images/3 (5).png" alt="">
+                    </a>
+                </div>
+                <div class="item life">
+                    <a href="collection-6.html">
+                        <img src="images/3 (6).png" alt="">
+                    </a>
+                </div>
+
+                <!-- 花灯纸扎 -->
+                <div class="item Lantern">
+                    <a href="collection-7.html">
+                        <img src="images/4 (1).png" alt="">
+                    </a>
+                </div>
+                <div class="item Lantern">
+                    <a href="collection-7.html">
+                        <img src="images/4 (2).png" alt="">
+                    </a>
+                </div>
+                <div class="item Lantern">
+                    <a href="collection-7.html">
+                        <img src="images/4 (3).png" alt="">
+                    </a>
+                </div>
+                <div class="item Lantern">
+                    <a href="collection-7.html">
+                        <img src="images/4 (4).png" alt="">
+                    </a>
+                </div>
+                <div class="item Lantern">
+                    <a href="collection-7.html">
+                        <img src="images/4 (5).png" alt="">
+                    </a>
+                </div>
+                <div class="item Lantern">
+                    <a href="collection-7.html">
+                        <img src="images/4 (6).png" alt="">
+                    </a>
+                </div>
+
+                <!-- 宗教戏曲 -->
+                <div class="item drama">
+                    <a href="collection-8.html">
+                        <img src="images/7 (1).png" alt="">
+                    </a>
+                </div>
+                <div class="item drama">
+                    <a href="collection-8.html">
+                        <img src="images/7 (2).png" alt="">
+                    </a>
+                </div>
+                <div class="item drama">
+                    <a href="collection-8.html">
+                        <img src="images/7 (3).png" alt="">
+                    </a>
+                </div>
+                <div class="item drama">
+                    <a href="collection-8.html">
+                        <img src="images/7 (4).png" alt="">
+                    </a>
+                </div>
+                <div class="item drama">
+                    <a href="collection-8.html">
+                        <img src="images/7 (5).png" alt="">
+                    </a>
+                </div>
+                <div class="item drama">
+                    <a href="collection-8.html">
+                        <img src="images/7 (6).png" alt="">
+                    </a>
+                </div>
+              
+            </div>
+        </div>
+        <div class="anmore">
+            <a href="collections.html">查看更多馆藏</a>
+        </div>
+    </div>
+</div>
+<hr style="margin-top: 10px;width: 84%;" id="introduction"> 
+<!-- Introduction -->
+<div class="wrap container" >
+         <div class="top" id="jdgk">
+            <span>基地概况</span>
+             <i>Overview</i>
+            <em></em>
+        </div>
+    	<dl class="i_about clearfix">
+        	<dt class="col-md-4 col-sm-4 col-xs-12">
+        		<img src="images/introduce_img.jpg" alt="">
+        	</dt>
+            <dd  class="col-md-8 col-sm-8 col-xs-12">
+            	<h6>湖南城市学院湖湘传统美术研究基地</h6>
+               <!--  <div class="tip">湖南城市学院湖湘传统美术研究基地</div> -->
+                <p>湖南城市学院湖湘传统美术研究基地由湖湘传统美术陈列馆（320平方米）、我校与益阳羊舞岭窑陶瓷艺术发展有限公司联创非遗传承推广实训基地 （350平方米）、传统漆艺工作坊（120平方米）、装饰材料实验室（100平方米）、民间美术研究所（25平方米）、安化梅山文化研究所、苗族造型文化研究所、苗族蜡染工作坊（160平方在建）组成，2016年被湖南省社科联认定为湖南省社会科学普及基地。 </p>
+                <span>馆藏分类</span>
+                <p>传统绘画  传统建筑装饰  传统家具  传统木雕  传统民俗文物 传统民间织绣;<br /></p>
+                <span>地址</span>
+                <p>湖湖南省益阳市迎宾东路518号</p>
+            </dd>
+        </dl>
+    </div>
+	
+<!-- footer -->
+<footer>
+  <div class="container-fluid" style="background-color: #7aa2cc">
+   <div class="container" >
+    <div class="row text-center" style="margin-top:20px;font-size: 18px;">
+        <div class="col-md-12">
+            <p>Copyright © 2020 湖湘传统美术研究基地</p>
+        </div>
+    </div>
+    <br>
+    <div class="row text-center">
+        <div class="col-md-12" style="margin-bottom: 20px; ">
+            <p>湘ICP备10017183号-4</p>
+        </div>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<!-- video player -->
+
+
+
+<!--Include Js-->
+<script src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script>
+var b=$(window).height();
+    $(".slidewidt").css({"height":b});
+    var mySwiper = new Swiper('.slidewidt .swiper-container',{
+        autoplay : 5000,
+        paginationClickable: true,
+		pagination : '.pagination',
+        loop:true
+    });
+var $container = $('#gallery');
+    $container.isotope({
+        itemSelector: '.item',
+        filter: '.painting'
+    });
+    $('.nalista a').click(function(){
+        var $this = $(this);
+        if ( $this.hasClass('nactive') ) {
+            return false;
+        }
+        var $optionSet = $this.parents();
+        $optionSet.find('.nactive').removeClass('nactive');
+        $this.addClass('nactive');
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+        });
+        return false;
+});
+</script>
+<script type="text/javascript" src="js/TouchSlide.1.1.js" ></script>
+<script>
+		TouchSlide({ 
+			slideCell:"#slideBox", 
+			titCell:".hd li",
+			mainCell:".bd ul",
+			effect:"leftLoop"
+            //utoPlay:true//自动播放
+		});
+		TouchSlide({ 
+			slideCell:"#news_slide",
+			mainCell:".bd ul",
+			effect:"leftLoop",
+			autoPlay:true//自动播放
+		});
+</script>
+
+
+<script src="js/video.min.js"></script> 
+<script type="text/javascript">
+    function load(){
+      setTimeout(function(){document.getElementById("video-content").style.display="none";}, 10000)
+    }
+    function closeVideo() {
+        document.getElementById("video-content").style.display="none";
+    }
+
+  //设置中文
+  videojs.addLanguage('zh-CN');
+    var myPlayer = videojs('my-video',{
+        autoplay: 'muted'
+    });
+    videojs("my-video").ready(function(){
+        var myPlayer = this;
+        myPlayer.play();
+    });           
+</script> 
+</body>
+</html>
